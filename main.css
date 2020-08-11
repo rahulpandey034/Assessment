@@ -1,0 +1,103 @@
+.main-container {
+    max-width: 500px;
+    background-color: #EFEFEF;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 360px;
+    float: left;
+}
+  
+.flex-container > div {
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    margin: 0 0 2px 0;
+}
+
+.flex-container span {
+	width: 5px;
+	height: 75px;
+	float: left;
+}
+
+.button-container {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 20px;
+}
+
+.button1 {
+    width: 100px;
+    height: 30px;
+    background-color: #72C3DC;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    box-shadow: 0px 1px #333333;
+    color: #FFFFFF;
+}
+
+.top-para {
+    text-align: center; 
+    width: 500px;
+}
+
+.bottom-para {
+    text-align: center; 
+    width: 500px;
+}
+
+@media only screen and (max-width: 375px) {
+    .main-container {
+        height: 850px;
+        background-color: #FFFFFF;
+        border: 10px solid #000000;
+        border-radius: 10px;
+    }
+    
+    .flex-container {
+        margin-top: 80px;
+        padding: 12px;
+    }
+
+    .flex-container > div {
+        width: 240px;
+        flex-wrap: wrap;
+    }
+
+    .button-container {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        width: 315px;
+        height: 200px;
+        text-align: center;
+        top: -770px;
+        position: relative;
+    }
+
+    .top-para {
+        width: 94%;
+        margin: 0 0px 0 10px;
+        text-align: center;
+        height: 35px;
+        position: relative;
+        top: 45px;
+        color: white;
+        background-color: #333333;
+    }
+
+    .bottom-para {
+        text-align: center;
+        width: 345px;
+        position: relative;
+        bottom: 70px;
+    }
+  }
